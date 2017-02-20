@@ -82,6 +82,8 @@ app.on('ready', () => {
     // Create the browser window
     mainWindow = new BrowserWindow(mainWindowOption);
 
+    mainWindow.openDevTools();
+
     // ... and load our html page
     mainWindow.loadURL(`file://${srcPath}/app.html#/library`);
 
